@@ -21,8 +21,8 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore Assignment 1_Part1/Assignment 1_Part1.csproj
+      run: dotnet restore" Assignment 1_Part1.sln"
     - name: Build
-      run: dotnet build --no-restore Assignment 1_Part1/Assignment 1_Part1.csproj
+      run: dotnet build --no-restore" Assignment 1_Part1.sln"
     - name: Test
-      run: dotnet test --no-build --verbosity normal Assignment 1_Part1/Assignment 1_Part1.csproj
+      run: dotnet test --no-build --verbosity normal" Assignment 1_Part1.sln"
