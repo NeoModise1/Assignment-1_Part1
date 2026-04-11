@@ -23,6 +23,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore "Assignment 1_Part1.sln"
     - name: Build
-      run: dotnet build "Assignment 1_Part1.sln" --no-restore 
+      run: dotnet build --no-restore  "Assignment 1_Part1.sln"
     - name: Test
       run: dotnet test --no-build --verbosity normal "Assignment 1_Part1.sln"
