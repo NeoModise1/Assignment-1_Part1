@@ -18,12 +18,11 @@ jobs:
     - uses: actions/checkout@v4
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1.1
-    
-    - name: Setup NuGet
-      uses: NuGet/setup-nuget@v1
+      with:
+        dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: nuget restore "Assignment 1_Part1.sln"
+      run: dotnet restore "Assignment 1_Part1.sln"
     - name: Build
-      run: msbuild build --no-restore  "Assignment 1_Part1.sln"
+      run: dotnet build --no-restore  "Assignment 1_Part1.sln"
     - name: Test
-      run: echo "No Tests yet"
+      run: dotnet test --no-build --verbosity normal "Assignment 1_Part1.sln"
