@@ -40,7 +40,9 @@ The objective of this project is to:
 ## How to Run the Program
 1. Open the project in Visual Studio  
 2. Build the solution (Ctrl + Shift + B)  
-3. Run the application (F5)  
+3. Run the application (F5)
+4. Github workflow.![CI WORKFLOW](https://github.com/user-attachments/assets/9fc11951-da8e-4c47-850a-b67c70a8b2fd)
+
 
 OR  
 
